@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'movies/domain/usecases/get_top_rated_movies_usecases.dart';
+
 void main() {
+
   runApp(const MyApp());
 }
 
