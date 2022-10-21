@@ -1,11 +1,14 @@
 // ignore_for_file: camel_case_types
+import 'package:dartz/dartz.dart';
 import 'package:movies_app/movies/domain/entities/movies.dart';
 import 'package:movies_app/movies/domain/repository/base_movies_repository.dart';
+
+import '../../../core/error/failure.dart';
 class getTopRatedMoviesUseCases{
  BaseMoviesRepository baseMoviesRepository;
  getTopRatedMoviesUseCases(this.baseMoviesRepository);
 
- Future<List<Movies>>method()async{
-   return await baseMoviesRepository.getTopRated();
+ Future<Either<Failure,List<Movies>>>method()async{
+   return await baseMoviesRepository.getTopRatedMovies();
  }
 }

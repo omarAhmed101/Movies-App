@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'movies/domain/usecases/get_top_rated_movies_usecases.dart';
 
 void main() {
 
@@ -17,4 +16,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//git remote add origin https://github.com/omarAhmed101/Movies-App.git
